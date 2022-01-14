@@ -1,0 +1,45 @@
+<app-header></app-header>
+<section class="chartDivSection">
+  <div class="chartdiv"></div>
+</section>
+
+
+<jw-modal id="landMarkDetails" class="landmarkDetailsModal" >
+  <div *ngIf="modalData">
+    <span class="landmarkDetailsModal__closeBox" (click)="closeLandmarkDetails();"><i class="landmarkDetailsModal__closeIcon large material-icons">close</i></span>
+    <h1 class="landmarkDetailsModal__heading text-center" >{{modalData.name}}</h1>
+
+    <div class="landmarkDetailsModal__content">
+      <div class="row">
+        <div class="col-md-6 col-12">
+            Country - {{modalData.country}}
+          <img src="https://flagcdn.com/40x30/{{modalData.countryShortHand}}.png" width="40" height="30" alt="{{modalData.country}}">
+          <hr class="mobLine">
+        </div>
+        <div class="col-md-6 col-12">
+            Continent - {{modalData.continent}}
+            <hr class="mobLine">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6 col-12">
+            Native Name - {{modalData.name_native}}
+            <hr class="mobLine">
+        </div>
+        <div class="col-md-6 col-12">
+            Population - {{modalData.population}}
+            <hr class="mobLine">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 col-12">
+          <div class="landmarkDetailsModal__landmarkHead">Famous Landmarks</div>
+          <div class="landmarkDetailsModal__slider">
+          
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</jw-modal>
+

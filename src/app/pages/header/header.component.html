@@ -1,0 +1,12 @@
+<header #headerel class="header container" [ngClass]="{'header--scrolled': scrolled == true} " tabindex="0" aria-label="header"> 
+  <div class="header__brandingLogo" tabindex="0" aria-label="brand Logo" (click)="naviGateHome()">
+    <img class="header__brandImg" src="assets/images/branding.png">
+  </div>
+  <div class="header__usrProfile">
+    <div class="header__languageSelectorBox" tabindex="0" aria-label="language Selector">
+      <img class="header__languageSelectorImg" src="assets/images/flag.png">
+    </div>
+    <i class="header__avatar small material-icons" tabindex="0" aria-label="user profile">account_circle</i>
+  </div>
+  
+</header>

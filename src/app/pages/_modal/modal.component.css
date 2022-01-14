@@ -1,0 +1,80 @@
+﻿jw-modal {
+    display: none;
+}
+jw-modal .jw-modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    overflow: auto;
+}
+jw-modal .jw-modal .jw-modal-body {
+    padding: 20px;
+    background: #fff;
+    margin: 10px;
+    position: relative;
+    height: 82%;
+
+}
+jw-modal .jw-modal-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.75;
+    z-index: 900;
+}
+body.jw-modal-open {
+    overflow: hidden;
+}
+
+.landmarkDetailsModal__slideImg {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.landmarkDetailsModal__content {
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.landmarkDetailsModal__title{
+    text-align: center;
+}
+
+hr.mobLine {
+    margin-top: 10px;
+}
+
+.landmarkDetailsModal__heading{
+    margin-bottom: 30px;
+}
+
+.landmarkDetailsModal__closeBox{
+    position: absolute;
+}
+
+.landmarkDetailsModal__landmarkHead{
+    margin-bottom: 20px;
+}
+
+/*Desktop CSS*/
+@media (min-width:769px) {
+    .landmarkDetailsModal__slideImg{
+        height: 400px;
+        object-fit: contain;
+    }
+
+    jw-modal .jw-modal .jw-modal-body{
+        height: 97%;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
